@@ -1,3 +1,5 @@
+package ru;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -13,7 +15,13 @@ public class Robot {
     //текущая координата У
     private double y=0;
     //курс
-    private double course=0;
+    protected double course=0;
+    
+    //конструктор класса
+    public Robot(double x, double y){
+        this.x=x;
+        this.y=y;
+    }
     
     //печать коорбинат робота
    public void printCoordinates(){
