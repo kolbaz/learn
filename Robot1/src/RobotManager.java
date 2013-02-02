@@ -31,12 +31,12 @@ public class RobotManager {
         robot.printCoordinates();
         
         //задаем курс 90 градусов
-        robot.course = 90;
+        robot.setCourse(90);
         
         robot.forward(20);
         robot.printCoordinates();
         
-        robot.course = 45;
+        robot.setCourse(45);
         
         robot.forward(20);
         robot.printCoordinates();

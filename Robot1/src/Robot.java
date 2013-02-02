@@ -9,23 +9,46 @@
  */
 public class Robot {
     //текущая координата Х
-    double x=0;
+    private double x=0;
     //текущая координата У
-    double y=0;
+    private double y=0;
     //курс
-    double course=0;
+    private double course=0;
     
     //печать коорбинат робота
-    void printCoordinates(){
+   public void printCoordinates(){
         System.out.println(x + ", "+y);
     }
     
     //передвижение на дистанцию
-    void forward(int distance){
+    public void forward(int distance){
         //обращение к полю объекта Х
         x = x + distance * Math.cos(course / 180 * Math.PI);
         //обращение к полю объекта У
         y = y + distance * Math.sin(course / 180 * Math.PI);
+    }
+    
+    //вывод значений
+    public double getX(){
+        return x;
+    }
+    
+    public double getY(){
+        return y;
+    }
+    
+    public double getCourse(){
+        return course;
+    }
+    
+    //изменения курса
+    /**
+     * Задаем направление перемещения
+     * @param course
+     * Градус перемещения
+     */
+    public void setCourse(double course){
+        this.course = course;
     }
     
 }
