@@ -8,5 +8,11 @@
  * @author kolbas
  */
 public class Robot {
+    //текущая координата Х
+    int x=0;
+    //текущая координата У
+    int y=0;
+    //курс
+    int course=0;
     
 }
